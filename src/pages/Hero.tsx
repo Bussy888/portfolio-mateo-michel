@@ -163,8 +163,8 @@ export default function Hero() {
                       width: "100%",
                       height: "auto",
                       objectFit: "cover",
-                      filter: "grayscale(20%) contrast(120%)",
-                      boxShadow: "0px 0px 30px rgba(255, 0, 0, 0.15)",
+                      filter: "grayscale(20%) contrast(110%)",
+                      boxShadow: "0px 0px 30px rgba(255, 0, 0, 0.25)",
                       border: "1px solid rgba(255, 0, 0, 0.3)",
                     }}
                   />
