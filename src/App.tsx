@@ -1,5 +1,5 @@
 import { ThemeProvider, createTheme, CssBaseline } from "@mui/material";
-import Hero from "./pages/hero";
+import Hero from "./pages/Hero";
 
 const darkTheme = createTheme({
   palette: {
