@@ -203,7 +203,7 @@ export default function Hero() {
                         opacity: 0.7,
                       }}
                     >
-                      COORD: 16.5000° S
+                      COORD: 16.501749° S
                     </Typography>
                     <Typography
                       sx={{
@@ -212,7 +212,7 @@ export default function Hero() {
                         opacity: 0.7,
                       }}
                     >
-                      LAT: 68.1193° W
+                      LAT: 68.082737° W
                     </Typography>
                     <Typography
                       sx={{
@@ -768,24 +768,57 @@ export default function Hero() {
                   fontSize: { xs: "0.9rem", sm: "1.1rem" },
                 }}
               >
-                <Typography sx={{ mb: 2 }}>
-                  <span style={{ color: "#ff0000" }}>NAME:</span> LUIS MATEO
-                  MICHEL FLORES
+                <Typography
+                  sx={{
+                    fontFamily: "monospace",
+                    mb: 2,
+                  }}
+                >
+                  <span
+                    style={{
+                      fontFamily: "monospace",
+                      color: "#ff0000",
+                    }}
+                  >
+                    {">"} NAME:
+                  </span>{" "}
+                  LUIS MATEO MICHEL FLORES
                 </Typography>
-                <Typography sx={{ mb: 2 }}>
-                  <span style={{ color: "#ff0000" }}>LOCATION:</span> LA PAZ,
-                  BOLIVIA [16.5° S, 68.1° W]
+                <Typography
+                  sx={{
+                    fontFamily: "monospace",
+                    mb: 2,
+                  }}
+                >
+                  <span style={{ color: "#ff0000" }}>{">"} LOCATION:</span> LA
+                  PAZ, BOLIVIA [16.5° S, 68.1° W]
                 </Typography>
-                <Typography sx={{ mb: 2, wordBreak: "break-all" }}>
-                  <span style={{ color: "#ff0000" }}>EMAIL:</span>{" "}
+                <Typography
+                  sx={{
+                    fontFamily: "monospace",
+                    mb: 2,
+                    wordBreak: "break-all",
+                  }}
+                >
+                  <span style={{ color: "#ff0000" }}>{">"} EMAIL:</span>{" "}
                   MATEO8MICHEL8@GMAIL.COM
                 </Typography>
-                <Typography sx={{ mb: 2 }}>
-                  <span style={{ color: "#ff0000" }}>CITIZENSHIP:</span>{" "}
+                <Typography
+                  sx={{
+                    fontFamily: "monospace",
+                    mb: 2,
+                  }}
+                >
+                  <span style={{ color: "#ff0000" }}>{">"} CITIZENSHIP:</span>{" "}
                   BOLIVIAN / SPANISH (EU_PASSPORT)
                 </Typography>
-                <Typography sx={{ mb: 2 }}>
-                  <span style={{ color: "#ff0000" }}>STATUS:</span>{" "}
+                <Typography
+                  sx={{
+                    fontFamily: "monospace",
+                    mb: 2,
+                  }}
+                >
+                  <span style={{ color: "#ff0000" }}> {">"} STATUS:</span>{" "}
                   AVAILABLE_FOR_OPERATIONS
                 </Typography>
               </Box>
@@ -807,6 +840,8 @@ export default function Hero() {
                   color: "#ff0000",
                   py: { xs: 1.5, sm: 2 },
                   justifyContent: "center",
+                  fontFamily: "monospace",
+                  fontSize: { xs: "0.9rem", sm: "1.1rem" },
                   px: 3,
                   borderRadius: 0,
                   "&:hover": { bgcolor: "rgba(255,0,0,0.1)" },
@@ -822,6 +857,8 @@ export default function Hero() {
                   color: "#ff0000",
                   py: { xs: 1.5, sm: 2 },
                   justifyContent: "center",
+                  fontFamily: "monospace",
+                  fontSize: { xs: "0.9rem", sm: "1.1rem" },
                   px: 3,
                   borderRadius: 0,
                   "&:hover": { bgcolor: "rgba(255,0,0,0.1)" },
@@ -838,6 +875,8 @@ export default function Hero() {
                   bgcolor: "#ff0000",
                   color: "#fff",
                   py: { xs: 1.5, sm: 2 },
+                  fontFamily: "monospace",
+                  fontSize: { xs: "0.9rem", sm: "1.1rem" },
                   px: 3,
                   justifyContent: "center",
                   borderRadius: 0,
