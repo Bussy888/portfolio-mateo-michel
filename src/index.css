@@ -1,0 +1,42 @@
+:root,
+html,
+body,
+#root {
+  --console-font: "Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas",
+    "Courier New", monospace;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+html {
+  background: #030303;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--console-font);
+  overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea,
+select,
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--console-font) !important;
+}
+
+::selection {
+  background: rgba(255, 26, 26, 0.35);
+  color: #ffffff;
+}

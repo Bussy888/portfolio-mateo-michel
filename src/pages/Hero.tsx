@@ -84,12 +84,47 @@ export default function Hero() {
   return (
     <Box
       sx={{
-        backgroundColor: "#050505",
+        backgroundColor: "#030303",
         backgroundImage:
-          "radial-gradient(circle at 50% 50%, #1a0000 0%, #050505 80%)",
+          "radial-gradient(circle at 50% 18%, rgba(255, 26, 26, 0.18) 0%, rgba(3, 3, 3, 0) 34%), linear-gradient(180deg, rgba(255, 26, 26, 0.08) 0%, rgba(3, 3, 3, 0) 38%, rgba(3, 3, 3, 1) 100%)",
         color: "#fff",
-        fontFamily: '"Courier New", Courier, monospace',
+        fontFamily:
+          '"Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "Courier New", monospace',
         overflowX: "hidden", // Previene scroll horizontal accidental en móviles
+        position: "relative",
+        isolation: "isolate",
+        "&:before": {
+          content: '""',
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+          backgroundImage:
+            "linear-gradient(rgba(255, 26, 26, 0.13) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 26, 26, 0.13) 1px, transparent 1px), linear-gradient(rgba(255, 26, 26, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 26, 26, 0.05) 1px, transparent 1px)",
+          backgroundSize: {
+            xs: "42px 42px, 42px 42px, 14px 14px, 14px 14px",
+            md: "64px 64px, 64px 64px, 16px 16px, 16px 16px",
+          },
+          maskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.35) 62%, rgba(0,0,0,0.08))",
+          WebkitMaskImage:
+            "linear-gradient(to bottom, rgba(0,0,0,0.95), rgba(0,0,0,0.35) 62%, rgba(0,0,0,0.08))",
+        },
+        "&:after": {
+          content: '""',
+          position: "fixed",
+          inset: 0,
+          zIndex: 0,
+          pointerEvents: "none",
+          background:
+            "repeating-linear-gradient(180deg, rgba(255,255,255,0.035) 0px, rgba(255,255,255,0.035) 1px, transparent 1px, transparent 5px)",
+          mixBlendMode: "screen",
+          opacity: 0.22,
+        },
+        "& > *": {
+          position: "relative",
+          zIndex: 1,
+        },
       }}
     >
       {/* ==================== SECCIÓN 1: HERO ==================== */}
@@ -100,6 +135,28 @@ export default function Hero() {
           alignItems: "center",
           py: { xs: 4, md: 8 },
           pt: { xs: 8, md: 8 },
+          position: "relative",
+          overflow: "hidden",
+          "&:before": {
+            content: '""',
+            position: "absolute",
+            left: { xs: "-45%", md: "-22%" },
+            right: { xs: "-45%", md: "-22%" },
+            bottom: { xs: "-18%", md: "-24%" },
+            height: { xs: "42vh", md: "50vh" },
+            backgroundImage:
+              "linear-gradient(rgba(255,26,26,0.28) 1px, transparent 1px), linear-gradient(90deg, rgba(255,26,26,0.28) 1px, transparent 1px)",
+            backgroundSize: { xs: "46px 46px", md: "72px 72px" },
+            transform: "perspective(520px) rotateX(62deg)",
+            transformOrigin: "bottom center",
+            filter: "drop-shadow(0 0 10px rgba(255,26,26,0.45))",
+            opacity: 0.45,
+            pointerEvents: "none",
+          },
+          "& > .MuiContainer-root": {
+            position: "relative",
+            zIndex: 1,
+          },
         }}
       >
         <Container maxWidth="lg">
@@ -260,10 +317,11 @@ export default function Hero() {
                   variant="h2"
                   sx={{
                     fontWeight: 900,
-                    fontFamily: "sans-serif",
+                    fontFamily:
+                      '"Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "Courier New", monospace',
                     fontStyle: "italic",
                     lineHeight: 1,
-                    letterSpacing: "-0.02em",
+                    letterSpacing: 0,
                     fontSize: { xs: "2.5rem", sm: "3.5rem", md: "4rem" },
                     textAlign: { xs: "center", md: "left" },
                   }}
@@ -274,7 +332,8 @@ export default function Hero() {
                   variant="h2"
                   sx={{
                     fontWeight: 900,
-                    fontFamily: "sans-serif",
+                    fontFamily:
+                      '"Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "Courier New", monospace',
                     fontStyle: "italic",
                     color: "#ff0000",
                     textShadow:
@@ -291,7 +350,8 @@ export default function Hero() {
                   sx={{
                     color: "#a0a0a0",
                     mb: 4,
-                    fontFamily: "sans-serif",
+                    fontFamily:
+                      '"Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "Courier New", monospace',
                     fontSize: { xs: "0.95rem", md: "1.1rem" },
                     lineHeight: 1.6,
                     textAlign: { xs: "center", md: "left" },
@@ -700,7 +760,8 @@ export default function Hero() {
                           color: "#a0a0a0",
                           mb: 3,
                           lineHeight: 1.5,
-                          fontFamily: "sans-serif",
+                          fontFamily:
+                            '"Cascadia Code", "JetBrains Mono", "Fira Code", "Consolas", "Courier New", monospace',
                         }}
                       >
                         {project.desc}
