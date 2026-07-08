@@ -29,11 +29,11 @@ export default function Hero() {
       imageUrl: "golocal.png",
     },
     {
-      title: "VINEYARD_DASHBOARD",
-      desc: "Dynamic visualization interface for vineyard management. Real-time monitoring and presentation-ready logistics dashboard.",
-      tech: "React / MUI / Recharts",
-      link: "https://erp-vinedo.vercel.app/",
-      imageUrl: "erp-vinedo.png",
+      title: "EL_CLOSET_DE_ROMEO",
+      desc: "Pet apparel storefront with catalog filtering, product inventory signals, and a focused shopping flow for dog clothing.",
+      tech: "React / Vite / MUI / Supabase / Vercel",
+      link: "https://el-closet-de-romeo.vercel.app/",
+      imageUrl: "closet-romeo.png",
     },
   ];
 
@@ -46,7 +46,12 @@ export default function Hero() {
     {
       category: "AI_&_EMERGING_TECH",
       level: 70,
-      tech: "RAG, LLM Orchestration, Computer Vision",
+      tech: "RAG, LLM Orchestration, AI Coding Agents, Computer Vision",
+    },
+    {
+      category: "AI_AGENT_WORKFLOWS",
+      level: 75,
+      tech: "Codex, Claude Code, Gemini CLI, prompt engineering, assisted debugging",
     },
     {
       category: "FRAMEWORKS_&_LIBS",
@@ -56,7 +61,7 @@ export default function Hero() {
     {
       category: "DATABASES",
       level: 75,
-      tech: "MySQL, MongoDB, PostgreSQL, T-SQL",
+      tech: "MySQL, MongoDB, PostgreSQL, Supabase, T-SQL",
     },
     {
       category: "AUTOMATION_&_RPA",
@@ -66,7 +71,7 @@ export default function Hero() {
     {
       category: "TOOLS_&_CLOUD",
       level: 70,
-      tech: "AWS, Google Cloud, Docker, GitHub, Postman, VMWare",
+      tech: "AWS, Google Cloud, Supabase, Vercel, Docker, GitHub, Postman, VMWare",
     },
     { category: "GAME_DEVELOPMENT", level: 80, tech: "Unity, Godot Engine" },
   ];
